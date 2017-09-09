@@ -4,7 +4,11 @@ A simple Linux CLI tool for finding/filtering image files based on their EXIF in
 So basically this is like the traditional Unix [find-command](https://linux.die.net/man/1/find) but with added ability to use also EXIF-information for filtering the results. Written in python.
 
 ## Installation
-Just clone the repository and you should be ready to go.
+Install dependecies (e.g. for Ubuntu):
+`sudo apt install python python-pyexiv2`
+
+Then just clone the repository and you should be ready to go.
+
 Additionally you could to add symbolic links to `photofind.py` and `photodb.py` files to somewhere in your PATH to make the usage more convenient.
 
 ## Basic Examples
