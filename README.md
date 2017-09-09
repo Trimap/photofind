@@ -5,8 +5,10 @@ So basically this is like the traditional Unix [find-command](https://linux.die.
 
 **Note 2017-09-09**: This tool was originally created for personal purposes in 2013 and made public today (2017-09-09). **If you like it and want to develop/maintain it further, please let me know!** (I don't personally have time for this right now). Wouldn't it be great to have such a tool as part of mainstream Linux distributions? ;)
 
+The codebase hasn't been maintained much since 2013 but it should work as shown by the examples below.
+
 ## Installation
-Install dependecies (e.g. for Ubuntu):
+Install dependecies (e.g. in Ubuntu):
 `sudo apt install python python-pyexiv2`
 
 Then just clone the repository and you should be ready to go.
