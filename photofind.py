@@ -11,12 +11,13 @@ photofind Command-line tool for finding photos based on EXIF-information.
  
 """
 
-import photodb
-import exiffilter
-
 import sys
 import argparse
 from subprocess import Popen, PIPE
+
+import photodb
+import exiffilter
+
 
 def debug(msg):
     sys.stderr.write(str(msg) + '\n')
@@ -90,16 +91,17 @@ def main():
 
     metadataNeeded = ef.numFilters() > 0 or args.printdb
 
-    if (not metadataNeeded):
+    if not metadataNeeded:
         for fname in files:
             print fname
     else:
         db = photodb.PhotoDB(args.dbfile)
         db.load()
 
-        if (args.update):
+        if args.update:
             db.setUpdateIfNotFound(True)
-            
+
+
         nSkipped = 0
         for fname in files:
             md = db.getMetadata(fname)
