@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 '''
-Created on Jan 6, 2013
+ Created on Jan 6, 2013
 
-@author: juuso
+ Author: Juuso Räsänen (email: info@trimap.fi)
 '''
 from ImageMetadata import ImageMetadata
 

@@ -6,8 +6,7 @@ photofind Command-line tool for finding photos based on EXIF-information.
 
  Usage: photofind [PATH] [PHOTO-OPTIONS] [FIND-OPTIONS]
 
- Author: Juuso Räsänen
- License: GPL version 2
+ Author: Juuso Räsänen 2013 (email: info@trimap.fi)
  
 """
 

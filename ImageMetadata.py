@@ -1,7 +1,7 @@
 '''
 Created on Jan 5, 2013
 
-@author: juuso
+Author: Juuso Räsänen (email: info@trimap.fi)
 '''
 
 import pyexiv2

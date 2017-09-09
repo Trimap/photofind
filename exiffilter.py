@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
- Author: Juuso Räsänen
- Lincense: GPL version 2
+ Author: Juuso Räsänen 2013 (email: info@trimap.fi)
+
 """
 
 import fractions
