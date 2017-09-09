@@ -16,7 +16,7 @@ Then just clone the repository and you should be ready to go.
 Additionally you could to add symbolic links to `photofind.py` and `photodb.py` files to somewhere in your PATH to make the usage more convenient.
 
 ## Basic Examples
- _This set of examples doesn't involve any EXIF-based stuff yet. So all these queries are done by using the reqular find-command under the hood._
+ _This set of examples doesn't involve any EXIF-based stuff. So all these queries are done by using the reqular find-command under the hood._
 
 To print usage:
 `./photofind.py -h`
@@ -31,7 +31,7 @@ To find image files whose size is bigger than 5 MB:
 `./photofind.py ~/Pictures/ -size +5M`
 
 To count the number of image files bigger than 5MB:
-(Demonstrates piping to other commands like)
+(Demonstrates piping to other commands)
 `./photofind.py ~/Pictures/ -size +5M | wc -l`
 
 ## EXIF Examples
