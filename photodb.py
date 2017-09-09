@@ -155,7 +155,8 @@ class PhotoDB:
             
             
         self.save()
-                    
+
+        print                    
         print "Updated image database for %d files. Skipped %d files." % (numUpdated, numSkipped)
 
 

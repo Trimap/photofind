@@ -7,7 +7,7 @@ photofind Command-line tool for finding photos based on EXIF-information.
  Usage: photofind [PATH] [PHOTO-OPTIONS] [FIND-OPTIONS]
 
  Author: Juuso Räsänen
- Lincense: GPL version 2
+ License: GPL version 2
  
 """
 
@@ -34,10 +34,10 @@ def main():
     #parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
 
     parser.add_argument('path', nargs='?', default='.', help="Path (default '.')")
-    parser.add_argument('-videos', action='store_true', help='Include video files also TODO')
+    parser.add_argument('-videos', action='store_true', help='TODO! (Include video files also)')
     parser.add_argument('-debug', '-d', action='store_true', help='Print some additional debug info')
     parser.add_argument('-printdb', action='store_true', help='Print output in DB-format')
-    parser.add_argument('-update', action='store_true', help='Update image database for files that are not there yet.')
+    parser.add_argument('-update', action='store_true', help='TODO! (Update image database for files that are not there yet.)')
     parser.add_argument('-dbfile', default=photodb.PhotoDB.DEFAULT_DBFILE, help='SimplePhotoDatabase file to use (default %s)' % photodb.PhotoDB.DEFAULT_DBFILE)
    
     exifgroup = parser.add_argument_group('Metadata filters')
@@ -120,9 +120,11 @@ def main():
         
         if (nSkipped > 0):
             msg = 'Skipped %d image files because they were not found in database.' % nSkipped
-            msg += ' Perhaps you want to run again with -update option?'
             if (not args.debug):
-                msg += ' (Or run again with -d option to see the skipped files.)'
+                msg += ' (Use -d option to see the skipped files.)'
+            msg += '\nTip: Update the database first by running: "photodb -update %s"' % args.path
+            # msg += ' Perhaps you want to run again with -update option?'
+            print
             warn(msg)
 
 if __name__ == "__main__":
