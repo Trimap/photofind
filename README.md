@@ -3,6 +3,8 @@ A simple Linux CLI tool for finding/filtering image files based on their EXIF in
 
 So basically this is like the traditional Unix [find-command](https://linux.die.net/man/1/find) but with added ability to use also EXIF-information for filtering the results. Written in python.
 
+**Note 2017-09-09**: This tool was originally created for personal purposes in 2013 and made public today (2017-09-09). **If you like it and want to develop/maintain it further, please let me know!** (I don't personally have time for this right now). Wouldn't it be great to have such a tool as part of mainstream Linux distributions? ;)
+
 ## Installation
 Install dependecies (e.g. for Ubuntu):
 `sudo apt install python python-pyexiv2`
@@ -46,6 +48,7 @@ To find photos whose focal length is 200 or over and user rating is 3:
 ## How it works
 
 The photofind utility works internally in 2 passes. In the first pass it executes find command with parameters like:
+
 `find ~/Pictures \( -iname "*.jpg" -or -iname "*.jpeg" -or -iname "*.png" -or -iname "*.tif" -or -iname "*.bmp" -or -iname "*.gif" -or -iname"*.xpm" -or -iname "*.nef" -or -iname "*.cr2" -or -iname "*.arw" \) -size +20k`
 
 Then in the second pass it filters the files of the previous command based on their EXIF information. The EXIF data is read from the files but cached in simple SQLite database (stored in file `~/.photodb.db` by default) to speed-up the queries.
