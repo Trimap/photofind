@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# Copyright © 2017 Juuso Räsänen <info@trimap.fi>
+
+
 '''
  Created on Jan 6, 2013
 

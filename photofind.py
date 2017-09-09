@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# Copyright © 2017 Juuso Räsänen <info@trimap.fi>
+
 """
 photofind Command-line tool for finding photos based on EXIF-information.
 

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# Copyright © 2017 Juuso Räsänen <info@trimap.fi>
+
 """
  Author: Juuso Räsänen 2013 (email: info@trimap.fi)
 

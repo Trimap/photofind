@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# Copyright © 2017 Juuso Räsänen <info@trimap.fi>
+
 '''
 Created on Jan 5, 2013
 
